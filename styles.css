@@ -93,6 +93,9 @@ hr {
     justify-content: flex-end;
     text-shadow: 2px 2px 5px #4ea58a;
     brackground-color: hsl(180, 26%, 96%, 0.2);
+}    
+ 
+header {
     backdrop-filter: blur(15px);
 }
 .btm{
