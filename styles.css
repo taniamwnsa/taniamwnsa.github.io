@@ -97,6 +97,7 @@ hr {
 
 #backblur {
     backdrop-filter: blur(7px);
+    padding: 5px;
 }
 
 .btm{
