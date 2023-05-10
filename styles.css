@@ -96,7 +96,7 @@ hr {
     border: 0;
     font-weight: bold;
     padding: 10px 20px;
-    background: ##f3f8f8;
+    background: #f3f8f8;
     color: #0f2532;
     border: 1px solid #0f2532;
 }
@@ -131,7 +131,7 @@ hr {
 
 .news-cards a {
     padding: 10px 0;
-    color: #f3f8f8;
+    color: ##e4546c;
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
