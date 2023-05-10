@@ -15,7 +15,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 a {
-    color: #ffff;
+    color: #0f2532;
     text-decoration: none;
 }
 
@@ -57,7 +57,7 @@ ul {
 }
 
 .nav-main ul li a:hover {
-    border-bottom: 2px solid #ffff;
+    border-bottom: 2px solid #0f2532;
 }
 
 .nav-main ul.nav-menu {
@@ -97,8 +97,8 @@ hr {
     font-weight: bold;
     padding: 10px 20px;
     background: #262626;
-    color: #ffff;
-    border: 1px solid #ffff;
+    color: #0f2532;
+    border: 1px solid #0f2532;
 }
 
 .btm:hover{
