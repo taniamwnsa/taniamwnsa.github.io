@@ -41,6 +41,7 @@ ul {
 
 .nav-brand {
     width: 50px;
+    background-color: #e4546c;
 }
 
 /*NAV LEFT*/
@@ -71,7 +72,6 @@ ul {
     right: 30px;
     z-index: 2;
     font-size: 1.5rem;
-    background-color: #e4546c;
     display: none;
   }
 
