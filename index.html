@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pascal Documentation Page</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+	</head>
+
+	<body>
+		<nav id="navbar">
+			<header>Pascal Documentation</header>
+			<ul id="navlinks">
+				<li>
+					<a class="nav-link" href="#Introduction">Introduction</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#Language_Syntax_and_Structure">Language Syntax and Structure</a>
+				</li>
+				<li>
+					<a class="nav-link" href="#Built-in_Functions_and_Standard_Library"
+						>Built-in Functions and Standard Library</a
+					>
+				</li>
+			</ul>
+		</nav>
+
+		<main id="main-doc">
+			<section class="main-section introduction">
+				<header id="Introduction">Introduction</header>
+				<p>
+					Pascal is a high-level programming language designed in the late 1960s by
+					<span class="bold">Niklaus Wirth</span> as a tool for teaching programming concepts and developing
+					reliable software. Named after the French mathematician and philosopher
+					<span class="bold">Blaise Pascal</span>, the language gained popularity due to its simplicity,
+					readability, and strong emphasis on structured programming.
+				</p>
+				<p>
+					Pascal was initially developed to encourage good programming practices and foster software reliability.
+					It became widely used in academic settings and served as a foundation for learning programming
+					principles. Over time, Pascal evolved into a versatile language suitable for various application domains,
+					including scientific computing, system programming, and education.
+				</p>
+				<p>Some of its key features are:</p>
+				<ul>
+					<li>
+						<span class="bold">Readability:</span> Pascal's syntax is designed to be easily readable and
+						understandable, making it an approachable language for beginners and experienced programmers alike.
+					</li>
+					<li>
+						<span class="bold">Strong Typing:</span> Pascal enforces strong typing, requiring explicit
+						declaration of variable types. This helps catch potential errors at compile-time and promotes code
+						reliability.
+					</li>
+					<li>
+						<span class="bold">Structured Programming:</span> Pascal supports structured programming techniques,
+						such as the use of modules, procedures, and functions, enabling the development of modular and
+						maintainable code.
+					</li>
+				</ul>
+			</section>
+			<section class="main-section syntax">
+				<header id="Language_Syntax_and_Structure">Language Syntax and Structure</header>
+				<p>
+					Pascal has a well-defined syntax and structure that forms the foundation of its programming paradigm.
+					Understanding the fundamental elements of Pascal, such as data types, variables, operators, control
+					structures, and procedures/functions, is crucial for writing effective Pascal code.
+				</p>
+				<ol>
+					<li>
+						<span class="bold">Data Types:</span> Pascal provides a range of built-in data types, including
+						integer, real, boolean, character, string, and more. These data types define the kind of values that
+						variables can hold and the operations that can be performed on them.
+					</li>
+					<p>Example:</p>
+					<pre class="code-snippet">
+						<code>
+						<span class="pascal">var</span>
+							age: integer;
+							price: real;
+							isValid: boolean;
+							name: string;
+						</code>
+					</pre>
+					<li>
+						<span class="bold">Variables:</span> Variables are used to store and manipulate data in Pascal. They
+						must be declared with a specific data type before use. Pascal follows a strict naming convention
+						where variables must start with a letter and can contain letters, digits, or underscores.
+					</li>
+					<p>Example:</p>
+					<pre class="code-snippet">
+						<code>
+							<span class="pascal">var</span>
+							x: integer;
+							y: real;
+
+							begin
+
+							x: 15;
+							y: 13.50; 
+						</code>
+					</pre>
+					<li>
+						<span class="bold">Operators:</span> Pascal supports a variety of operators for performing
+						mathematical, logical, and relational operations. These include arithmetic operators (+, -, *, /),
+						comparison operators (=, <>, <, >, <=, >=), logical operators (and, or, not), and more.
+					</li>
+					<p>Example:</p>
+					<pre class="code-snippet">
+						<code>
+							<span class="pascal">var</span>
+							a, b, c: integer;
+
+							begin 
+							a := 10;
+							b := 15;
+
+							c := a + b			<span class="code comment">// Addition</span>
+							c := a * b 			<span class="code comment">// Multiplication</span>
+							c := a > b			<span class="code comment">// Greater than comparison</span>
+						</code>
+					</pre>
+					<li>
+						<span class="bold">Control Structures:</span> Pascal provides control structures to manage the flow
+						of program execution. These include conditional statements (if-then, if-then-else, case), loops
+						(while, repeat-until, for), and structured branching (break, continue).
+					</li>
+					<p>Example:</p>
+					<pre class="code-snippet">
+						<code>
+							<span class="pascal">var</span>
+							num: integer;
+
+							begin
+
+							num := 10;
+
+							if num > 0 then
+							writeln('The number is positive.');
+
+							else if num < 0 then
+							writeln('The number is negative.');
+
+							else
+							writeln('The number is zero.');
+
+							end.
+						</code>
+					</pre>
+					<li>
+						<span class="bold">Procedures/Functions:</span> Pascal allows the creation of reusable code blocks
+						called procedures and functions. Procedures are used for performing specific tasks, while functions
+						return a value. They can accept parameters and can be called from other parts of the program.
+					</li>
+					<p>Example:</p>
+					<pre class="code-snippet">
+						<code>
+							procedure greet(name: string);
+
+							begin
+
+							('Hello, ', name, '! Welcome to Pascal.');
+							end;
+
+							begin
+
+							  greet('John');   <span class="comment"> // Calling the greet procedure.</span>
+					
+							end.
+						</code>
+					</pre>
+				</ol>
+			</section>
+			<section class="main-section functions">
+				<header id="Built-in_Functions_and_Standard_Library">Built-in Functions and Standard Library</header>
+				<p>
+					Pascal provides a set of built-in functions and procedures that are readily available for use in your
+					programs. These functions and procedures offer a wide range of functionality and can greatly simplify
+					common programming tasks. Here are some commonly used built-in functions and procedures in Pascal, along
+					with their usage, parameters, return values, and examples:
+				</p>
+				<ol>
+					<li>
+						<span class="bold">writeln:</span>
+						<ul class="list">
+							<li>Usage: Writes a line of text to the standard output.</li>
+							<li>Parameters: Accepts one or more parameters of any data type.</li>
+							<li>Return Value: None.</li>
+						</ul>
+						Example:
+						<pre class="code-snippet">
+							<code>
+								writeln('Hello, World!'); <span class="comment"> // Output: Hello, World!</span>
+							</code>
+						</pre>
+					</li>
+					<li>
+						<span class="bold">readln:</span>
+						<ul class="list">
+							<li>Usage: Reads input from the standard input.</li>
+							<li>
+								Parameters: Accepts one or more parameters of different data types where the input values
+								will be stored.
+							</li>
+							<li>Return Value: None.</li>
+						</ul>
+						Example:
+						<pre class="code-snippet">
+							<code>
+								<span class="pascal">var</span>
+								age: integer;
+
+								begin
+
+								write('Enter your age: ');
+								readln(age); <span class="comment"> // Reads an integer from the user and stores it in the 'age' variable.</span>
+
+								writeln('You are ', age, 'years old.'); <span class="comment"> //Outputs the entered age.</span>
+
+								end.
+							</code>
+						</pre>
+					</li>
+					<li>
+						<span class="bold">random and randomize:</span>
+						<ul class="list">
+							<li>Usage: generates a random number, and randomize initializes the random number generator.</li>
+							<li>Parameters: random accepts an optional range parameter.</li>
+							<li>
+								Return Value: Returns a random number within the specified range (or between 0 and maxint if
+								no range is provided).
+							</li>
+						</ul>
+						Example:
+						<pre class="code-snippet">
+							<code>
+								<span class="pascal">var</span>
+								randomNumber: integer;
+
+								begin
+
+								randomize; <span class="comment"> // Initializes the random number generator.</span>
+								randomNumber := random(100); <span class="comment">  // Generates a random number between 0 and 99.</span>
+
+								writeln('Random number: ',randomNumber);
+
+								end.
+							</code>
+						</pre>
+					</li>
+				</ol>
+			</section>
+		</main>
+	</body>
+</html>

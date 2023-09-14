@@ -1,0 +1,111 @@
+* {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #14243a;
+    background-color: #e3e6e8;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 23%;
+    height: 100%;
+    border-right: 3px solid rgb(20, 36, 58, 0.5);
+}
+
+nav > header {
+    font-size: 22px;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    color: #1ba4ac;
+    display: block;
+}
+
+#navbar ul {
+    display: block;
+    padding: 0;
+}
+
+#navbar li {
+    border-top: 1px solid rgba(20, 36, 58, 0.7);
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 8px 20px;
+}
+
+#main-doc {
+    margin-left: 23%;
+    display: block;
+    padding: 15px;
+}
+
+.main-section header {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(27, 164, 172, 0.6);
+    text-align: left;
+}
+
+.main-section p {
+    text-indent: 8px;
+}
+
+.introduction li {
+    padding-bottom: 8px;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+.code-snippet {
+    background-color: #14243a;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+    margin-bottom: 20px;
+    font-family: monospace;
+    white-space: pre-line;
+    display: block;
+    text-align: left;
+}
+.code-snippet code {
+    font-family: 'Roboto Mono', monospace;
+    color: #e3e6e8;
+    background-color: #14243a;
+    font-size: smaller;
+}
+
+span.pascal {
+    color: #1ba4ac;
+    background-color: #14243a;
+    font-family: 'Roboto Mono', monospace;
+    font-size: small;
+}
+
+span.comment {
+    font-family: inherit;
+    font-style: italic;
+    font-size: smaller;
+    color: rgba(227, 230, 232, 0.5);
+    background-color: #14243a;
+}
+
+ul.list {
+    list-style: disc;
+    margin: 8px 0 8px 0;
+}
+
+.list li {
+    padding-bottom: 5px;
+}
